@@ -1,0 +1,517 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+#bd{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(245,245,245);
+    width: 100%;
+}
+/* comienzo del header y nav- El nav esta dentro del header */
+
+.encabezado{
+    display:flex;
+    min-height: 100px;
+    background-color: rgb(181, 18, 50);
+    justify-content: space-evenly;
+    width: 100vw;
+}
+
+.barra-nav{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    width:60%;
+    height: auto;
+    margin: 2px;
+    padding: 4px;
+}
+.menu{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 2px;
+    justify-content: center;
+}
+
+.barra-nav div a{
+    margin:1%;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.75em;
+    border: 1px solid rgb(245, 245, 245);
+    border-radius: 50px;
+    padding: 0.3% 2%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: max-content;
+}
+.barra-nav div a:hover{
+    background-color: rgb(204, 69, 96);
+}
+
+.cont-logo{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    margin: 0;
+    padding:1%;
+    justify-content: center;
+
+}
+.logo{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    color: #ffff;
+    font-size: 4em;
+    font-weight: bolder;
+    margin: auto;
+    padding: 2px;
+}
+
+/* Final del header */
+
+/*------------ comienzo del titulo -----------*/
+.titulo{
+    width: 100%;
+    height: 75vh;
+    margin:0;
+    padding: 1%;
+    box-sizing: border-box;
+    display: inline-block;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../img/spa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.titulo h2{
+    color: blanchedalmond;
+    font-size: 3em;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: max-content;
+    text-align: center;
+    font-weight: bold;
+}
+.titulo p{
+    width: 60%;
+    height: max-content;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: blanchedalmond;
+    margin: 4% auto;
+    text-align: justify;
+}
+/*--------------- final del titulo --------------------*/
+
+/* ahora comienza el main */
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+    width: 100%;
+    background-color: rgba(245,245,245);
+}
+.contenido article{
+    margin: 10px 0px;
+}
+
+/* aqui comienza el articulo 1 */
+
+
+.seccion{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    height: auto;
+    background-color: rgba(245, 245, 245);
+}
+
+.seccion div{
+    width: 45vw;
+    box-sizing: border-box;
+    margin: auto;
+    padding: 50px 12px;
+}
+
+.seccion h2{
+    width: auto;
+    text-align: center;
+    margin: 1px 4px;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.25em;
+    border-bottom: 1px solid brown;
+    color: brown;
+    font-weight:bold;
+
+}
+.seccion img{
+    box-sizing: border-box;
+    width: 45vw;
+    height: auto;
+    border-radius: 1% 20%;
+    margin: auto;
+    padding: 0;
+}
+.seccion p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.25em;
+    width: auto;
+    text-align: center;
+    margin: 30px auto;
+    padding: 10px;
+    color: #333;
+    font-weight:bolder;
+}
+.seccion div li{
+    width: 300px;
+    height: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.25em;
+    margin: 10px auto;
+    padding: 4px;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+}
+/* Comienzo de estilos para el fomulario contactanos */
+#contacto{
+    background-color: rgba(30, 30, 30);
+    box-sizing: border-box;
+    padding: 4%;
+}
+.formulario{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70vh;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 2%;
+    margin: 4%  0%;
+    justify-content: space-evenly;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.formulario h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    color: rgba(250, 250, 250);
+    border-bottom: 2px solid rgba(250, 250, 250);
+    font-weight: bold;
+    margin: 2%;
+    padding: 1%;
+}
+
+.formulario div{
+    width: 50%;
+    height: auto;
+    margin: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    color: rgba(250, 250, 250);
+}
+
+.txt-area{
+    overflow: auto;
+    resize:none;
+}
+
+#contacto .btn{
+    width: max-content;
+    height: max-content;
+    margin: 5% auto;
+    padding: 1% 4%;
+    border-radius: 50px;
+    font-size: 1.50em;
+    font-weight: bold;
+}
+
+
+/* Final de estilos para el fomulario */
+
+
+/*------------------ comienzo de seccion mapa -------------------*/
+
+.mapa{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 60vh;
+    margin: 0;
+    padding: 1%;
+    box-sizing: border-box;
+    justify-content: center;
+    align-content: center;
+
+}
+.mapa div{
+    width:90%;
+    height:100%;
+    margin:10px auto;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+    align-content: center;
+}
+.mapa div iframe{
+    box-sizing: border-box;
+    width: 100%;
+    height:100%;
+    margin: 1%;
+    padding: 1%;
+}
+/* ---------------final de la seccion mapa --------------- */
+
+
+/* aqui realizamos los media queries */
+/* inicio de media para dispositivos chicos */
+
+
+@media (max-width: 768px){
+    .encabezado{
+        display: flex;
+        flex-direction:column;
+        margin:0;
+        padding:0;
+        justify-content:space-evenly;
+        align-items: center;
+    }
+    .barra-nav{
+        box-sizing: border-box;
+        margin: 1% auto;
+        padding: 0;
+    }
+    .menu{
+        font-size: 0.70em;
+        padding: 1%;
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        align-items: center;
+        align-content: center;
+    }
+    .cont-logo{
+        width: max-content;
+        height: auto;
+        margin: auto;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .logo{
+        font-size: 2em;
+        margin: 4% 0;
+        font-weight:bold;
+    }
+    /* comienzo del titulo */
+.titulo{
+    width: 100%;
+    height: max-content;
+    margin:0;
+    padding: 2%;
+    box-sizing: border-box;
+    display: inline-block;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../img/spa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.titulo h2{
+    color: blanchedalmond;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: max-content;
+    text-align: center;
+    font-weight: bold;
+}
+.titulo p{
+    width: 70%;
+    height: max-content;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: bolder;
+    color: blanchedalmond;
+    margin: 1% auto;
+    text-align: justify;
+    box-sizing: border-box;
+}
+/*--------------- final del titulo --------------------*/
+
+    /* aquí comienzan las medias para los aticulos */
+    
+
+    .contenido{
+        display: flex;
+        flex-direction: column;
+        width:100% ;
+        margin: 0px;
+        padding: 0px;
+        font-weight:lighter;
+    }
+    .seccion{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0px;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .seccion div{
+        width: 100vw;
+        box-sizing: border-box;
+        margin: auto;
+    }
+
+    .seccion h2{
+        width: 70vw;
+        text-align: center;
+        margin: 2% auto;
+        padding: 0px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.50em;
+        border-bottom: 1px solid brown;
+        color: brown;
+    
+    }
+    .seccion img{
+        width: 70vw;
+        box-sizing: border-box;
+        height:auto;
+        border-radius: 10% 10%;
+        margin: 0 15%;
+        padding: 0;
+    }
+    .seccion p{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1em;
+        width:80vw;
+        text-align: center;
+        margin: 2% auto;
+        padding: 5px;
+        color: #333;
+    }
+    .seccion div li{
+        width: 200px;
+        height: auto;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 0.90em;
+        margin: 0 auto;
+        padding: 2px;
+        text-align: center;
+        color: #333;
+    }
+    /* aquí termina los aticulos */
+
+    /* comienza el formulario */
+
+    #contacto .btn{
+        width: max-content;
+        height: max-content;
+        margin: 5% auto;
+        padding: 1% 4%;
+        border-radius: 50px;
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    .formulario{
+        margin: 5% 0;
+        justify-content: space-evenly;
+    }
+    .formulario h4{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2em;
+        color: rgba(250, 250, 250);
+        border-bottom: 2px solid rgba(250, 250, 250);
+    }
+
+    /*comenzamos con las medidas del footter */
+
+    /* .redes{
+        width: 100%;
+        background-color: rgb(211, 22, 60);
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #ffff;
+    }
+    
+    .conteiner-foot{
+        margin: 0;
+        padding: 0;
+    }
+
+    .conteiner-foot div{
+        margin: 1%;
+        padding: 1%;
+    } */
+    .conteiner-foot div ul{
+        list-style: none;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.60em;
+    }
+    .conteiner-foot div h3{
+        font-family: Arial, Helvetica, sans-serif;
+        color: #ffff;
+        border-bottom: 1px solid #ffff;
+        display: inline;
+        font-size: 1.30em;
+    }
+    
+    /* Aqui termina redes */
+    
+    /* Aqui comienza la seccion footer copyrait */
+    
+    .copy{
+        width: 100vw;
+        height: 10vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #474747e2;
+        color: #ffff;
+        margin: 0;
+        padding: 0;
+    }
+    .copy h4{
+        font-size: 0.60em;
+        margin: 0;
+        padding: 2px;
+    }
+    .copy h5{
+        font-size: 0.50em;
+        margin: 0;
+        padding: 2px;
+    }
+}
+/* aquí finaliza la media para los dispositivos chicos */
+
+
+
+
